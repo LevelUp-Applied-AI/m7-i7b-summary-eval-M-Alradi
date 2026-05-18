@@ -1,0 +1,8 @@
+transformers>=4.41,<5.0
+torch>=2.0,<3.0
+pandas>=2.0
+numpy>=1.26
+rouge-score>=0.1.2
+pytest>=7.4
+huggingface_hub>=0.20
+datasets>=2.0
