@@ -82,7 +82,7 @@ James Cameron's "Avatar" had its world premiere in London yesterday. The 3D sci-
 
 ---
 
-## Section 5: What I Would Do Differently
+## Section 5: What You Would Do Differently
 
 If we had a labeled summarization dataset for the tech and entertainment news domain — even a few hundred human-written reference summaries beyond what already ships with this corpus — the most valuable single investment would be fine-tuning the summarizer on that data. Right now, distilbart-cnn-6-6 is a CNN/DailyMail model applied to a broadly similar but not identical domain. The low-ROUGE cases (like the Avatar example in Section 3) suggest the model sometimes latches onto the wrong part of an article because its internal sense of "what matters" was learned from a slightly different editorial style. Supervised fine-tuning on even a small in-domain set would likely shift those low-ROUGE outliers upward more than it would improve the already-good high-ROUGE cases, because the model would learn the specific way this corpus's articles are structured. A secondary investment would be a faithfulness classifier — a lightweight model trained to flag summaries that contain claims not grounded in the source — to catch the cases where ROUGE looks acceptable but the output quietly drifts from the article. ROUGE alone, as Section 3 shows, cannot make that distinction.
 
