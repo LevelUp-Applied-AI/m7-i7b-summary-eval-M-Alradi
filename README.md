@@ -13,11 +13,27 @@ make summarize    # runs full pipeline; first run downloads ~250 MB
 
 The first call to `pipeline("summarization", ...)` downloads the model. Plan ~3 minutes for the first run; subsequent runs use cached weights. The full evaluation on 120 articles completes in ~6–8 minutes on CPU after the model is cached.
 
+## Model
+
+This integration uses **`sshleifer/distilbart-cnn-6-6`**, a distilled version of Facebook's BART model fine-tuned on the CNN/DailyMail news summarization dataset. It is an encoder–decoder (sequence-to-sequence) transformer that generates abstractive summaries — meaning it writes new sentences rather than copying phrases directly from the source. The model is loaded from Hugging Face Hub at runtime; no model file is committed to the repo. Summarization runs with deterministic beam search (`do_sample=False`, `num_beams=4`) and produces outputs between 30 and 120 tokens.
+
+## Corpus
+
+The evaluation runs on **120 tech, entertainment, and digital-culture news articles** drawn from the curated `data/tech_news_articles.csv` file, which contains 1,033 articles sourced from the [`glnmario/news-qa-summarization`](https://huggingface.co/datasets/glnmario/news-qa-summarization) dataset on Hugging Face. Reference summaries for the 120 evaluated articles are in `data/tech_news_summaries_reference.csv`; these are CNN editor-authored summaries that ship with the source dataset and serve as the gold standard for ROUGE scoring.
+
+## Re-run command
+
+```bash
+make summarize
+```
+
+This runs `python summarize.py` against the full 120-article evaluation set and writes `summary_predictions.csv` and `summary_metrics.json` to the repo root.
+
 ## What you will produce
 
 Committed:
 - `summarize.py` — your implementation
-- Updated `README.md` — 1–2 paragraphs documenting model id, corpus version, re-run command (this section is the template; replace it)
+- Updated `README.md` — this file
 - `summary_predictions.csv` — 120 rows with reference, predicted, and per-summary ROUGE
 - `summary_metrics.json` — aggregate ROUGE-1/2/L F1
 - `integrated-evaluation-report.md` — six-section integrated report (the M7 deliverable). Includes an optional Section 7 (Challenge Extensions) for learners completing challenge tiers — see the integration's learner guide.
