@@ -1,0 +1,21 @@
+qid,question,strategy_a_pred,strategy_b_pred,gold_answer,strategy_a_em,strategy_a_f1,strategy_b_em,strategy_b_f1
+Q01,What year did Radio Sud use cell phone reporters during Senegal's local government elections?,2006,Cellphones are particularly important for Africa due to a lack of some other technologies,2006,1,1.0,0,0.0
+Q02,"According to Sheldon Gellar, what communication technology has greater potential to influence transparency in Africa compared to the internet?",cellphones,cell phones,cellphones,1,1.0,0,0.0
+Q03,How many fixed telephones are there in the Democratic Republic of Congo?,"10,000",cell phones,"10,000",1,1.0,0,0.0
+Q04,"Where is the company Music Intelligence Solutions, developer of Hit Song Science, based?",Barcelona,Barcelona,Barcelona,1,1.0,1,1.0
+Q05,What score does Hit Song Science consider likely to do well in the music charts?,7.3,one to ten,7.3,1,1.0,0,0.0
+Q06,What UK chart position did Lee Ryan's song reach in 2005?,16,ten,16,1,1.0,0,0.0
+Q07,What percentage of Google's revenue in 2008 came from text ads?,97 percent,billions,97 percent,1,1.0,0,0.0
+Q08,What annual fee does Google charge businesses for bundling its online apps?,$50,free,$50 a head annually,0,0.5,0,0.0
+Q09,How many account hijacking cases were reported to the Internet Crime Complaint Center since 2006?,"3,200","nearly 3,200","nearly 3,200",0,0.6667,1,1.0
+Q10,What was the success rate of phishing attacks on social networks according to the 2005 Indiana University study?,70 percent,"nearly 3,200",70 percent,1,1.0,0,0.0
+Q11,How long was Twitter offline one Wednesday morning after the Haiti earthquake?,90 minutes,Twitter,90 minutes,1,1.0,0,0.0
+Q12,Why did companies pay millions of dollars to America Online a decade ago?,"to buy ""AOL keywords",The Internet was designed to have no central point of failure,AOL keywords,0,0.6667,0,0.0
+Q13,What was the registration cost for the Defcon conference?,($120,attendees are older and wiser and employed,$120,1,1.0,0,0.0
+Q14,What virus was found on a USB thumb drive passed around at Black Hat?,Conficker,fake ATM,Conficker,1,1.0,0,0.0
+Q15,What injuries did Azza Hilal Suleiman suffer after being beaten by security forces?,skull fractures and facial cuts,"kicked, kicked, partially stripped and then stomped",painful skull fractures and facial cuts,0,0.9091,0,0.1538
+Q16,"How many people died according to the Health Ministry, and how many were by gunshots?",14,Azza Hilal Suleiman,"16 people died, including 14 by gunshots",0,0.25,0,0.0
+Q17,"At what age did Luciano Pavarotti die, and what disease did he suffer from?",cancer,pancreatic cancer,71,0,0.0,0,0.0
+Q18,Which film did Dexter King compare the proposed Martin Luther King Jr. movie to?,Gandhi,DreamWorks Studios,Gandhi,1,1.0,0,0.0
+Q19,What percentage of girls in the Pediatrics study reported experiencing sexual advances online?,40 percent,104 abused and 69 non-abused girls ages 14 to 17,40 percent,1,1.0,0,0.0
+Q20,At what temperature did Charles Goodyear apply steam to rubber to achieve the most uniform results?,270 degrees Fahrenheit,stickier,270 degrees Fahrenheit,1,1.0,0,0.0
